@@ -1,0 +1,32 @@
+.special {
+    margin: 0 0 100px;
+}
+
+.special__title {
+    margin: 0 0 40px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #1E222E;
+}
+
+.special__offers-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.special__offers-item {
+}
+
+.special-card__link--aside {
+    background-color: #FF8516;
+}
+
+.special-card--aside {
+    background-color: #5E81FF;
+}
