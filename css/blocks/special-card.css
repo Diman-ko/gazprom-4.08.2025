@@ -1,6 +1,6 @@
 .special-card {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
@@ -9,26 +9,60 @@
   background: #F4F6FA;
 }
 
+.special-card__content {
+  text-align: left; /* Выравнивание контента слева */
+  margin-bottom: 20px; /* Отступ снизу для разделения от .special-card__bottom */
+}
+
 .special-card__heading {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  margin: 0;
   color: #1E222E;
-  text-align: center;
+  margin: 0 0 8px;
+  text-align: left
 }
 
 .special-card__description {
+  margin: 0;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: #1E222E;
 }
 
+.special__aside-list {
+  padding: 0 0 0 17px;
+  margin: 0;
+  list-style-type: disc;
+  align-items: start;
+}
+
+
+
+.special-card__heading--aside {
+  color: #ffffff;
+}
+
+.special__aside-item {
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.special-card__subheading {
+  padding: 0;
+  margin: 0 0 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+}
 .special-card__bottom {
   display: flex;
 
 }
+
+
 
 .special-card__link {
   display: flex;
@@ -38,5 +72,22 @@
   height: 40px;
   border-radius: 8px;
   background-color: #5E81FF;
+  margin: 0 0 30px;
+}
+
+.special-card__link--aside {
+  background-color: #FF8516;
+}
+
+.special-card--aside {
+  background-color: #5E81FF;
+}
+
+.special-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0 0 -30px -30px;
+  width: calc(100% + 30px);
 }
 
